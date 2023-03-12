@@ -1,10 +1,11 @@
 import styled from 'styled-components';
+import img from "../../images/background.jpg";
 
 export const StyledHome = styled.div`
     display: flex;
     flex-direction: column;
     height: 100vh;
-    background-image: url('https://img.freepik.com/free-photo/abstract-pastel-holographic-textured-background_53876-103983.jpg?w=2000&t=st=1678589700~exp=1678590300~hmac=3e93870c96734e372a8c18a1df8277753e47cb1b322ed75e7f58035a602460e7');
+    background-image: url(${img});
     background-size: cover;
     background-position: center;
     top: 0;
