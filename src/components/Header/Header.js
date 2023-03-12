@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from "react";
-import Burger from "../Burger/Burger";
-import Menu from "../Menu/Menu";
+import Burger from "./Burger/Burger";
+import Menu from "./Menu/Menu";
 import { useOnClickOutside } from "../../hooks";
 import "./Header.css"
 
@@ -29,12 +29,12 @@ function useWindowDimensions() {
 
 const Header = ({ open, setOpen }) => {
     const node = useRef(); 
-    const { _, width } = useWindowDimensions();
+    const {height, width} = useWindowDimensions();
     useOnClickOutside(node, () => setOpen(false));
 
     return (
         <div className="header">
-            {width < 680?
+            {height && width < 680?
                 <div ref={node}>
                     <Burger open={open} setOpen={setOpen} />
                     <Menu open={open} setOpen={setOpen} />
