@@ -2,9 +2,9 @@ import React from 'react';
 import { bool } from 'prop-types';
 import { StyledHome } from './Home.styled'
 
-const Home = ({ open }) => {
+const Home = ({ open, width }) => {
   return (
-    <StyledHome open={open}>
+    <StyledHome open={open} width={width}>
       <h1>ELIZABETH FORTANELY — SOFTWARE ENGINEER — AUSTIN, TX</h1>
     </StyledHome>
   );

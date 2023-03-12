@@ -1,5 +1,6 @@
 import React from 'react';
 import "./About.css"
+// import { StyledAbout } from './About.styled';
 
 function About() {
   return (
@@ -9,6 +10,9 @@ function About() {
       <p>In my free time, I enjoy [Your Hobbies] and learning new things. I am a [Your Personal Trait] and always strive to [Your Goal].</p>
       <p>If you are interested in working with me or have any questions, please don't hesitate to contact me.</p>
     </div>
+    // <StyledAbout open={open} width={width}>
+    //   <h1>ELIZABETH FORTANELY — SOFTWARE ENGINEER — AUSTIN, TX</h1>
+    // </StyledAbout>
   );
 }
 

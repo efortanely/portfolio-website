@@ -1,5 +1,6 @@
 ul {
     height: 0;
+    padding-right: 3rem;
 }
 
 li {
@@ -8,13 +9,9 @@ li {
     text-align: -webkit-match-parent;
 }
 
-.container {
-    position: relative;
+.header {
     width: 100%;
-    max-width: 1200;
-    margin: 0 auto;
-    box-sizing: border-box;
-    /* background-color: red; */
+    height: 0;
 }
 
 @media (min-width: 550px){
@@ -48,7 +45,7 @@ li {
     display: list-item;
     text-align: -webkit-match-parent;
     padding-top: 1rem;
-
+    list-style-type: none;
 }
 
 .u-pull-right {
@@ -62,17 +59,19 @@ a {
     font-size: 1.2em;
 }
 
-.row{
-    margin: 0;
-    padding: 0;
+a:hover {
+    color: #467976;
 }
 
-.one .columns{
-    margin: 0;
-    padding: 0;
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 0;
 }
 
 .logo{
     margin: 0;
-    padding: 0;
+    padding: 1rem;
+    padding-left: 2rem;
 }
