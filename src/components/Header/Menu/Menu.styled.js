@@ -5,11 +5,10 @@ export const StyledMenu = styled.nav`
   flex-direction: column;
   height: 30vh;
   text-align: right;
-  padding: 2rem;
   padding-top: 0;
   position: absolute;
   top: 3rem;
-  right: 0;
+  right: -2.5rem;
   overflow: hidden;
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
@@ -18,7 +17,7 @@ export const StyledMenu = styled.nav`
 
   li {
     transition: transform 0.3s ease-in-out;
-    transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(150%)'};
+    transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(140%)'};
     padding: 0rem 0 2rem 0;
   }
 

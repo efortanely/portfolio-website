@@ -1,6 +1,6 @@
 ul {
     height: 0;
-    padding-right: 3rem;
+    padding-right: 5rem;
 }
 
 li {
@@ -20,13 +20,13 @@ li {
     }
 }
 
-@media (min-width: 680px){
+@media (min-width: 550px){
     .nav-rt, .logo {
         display: block;
     }
 }
 
-@media (min-width: 680px){
+@media (min-width: 550px){
     .nav-rt li {
         list-style: none;
         float: left;
@@ -73,5 +73,11 @@ a:hover {
 .logo{
     margin: 0;
     padding: 1rem;
-    padding-left: 2rem;
+    padding-left: 1.5rem;
+}
+
+@media (min-width: 550px){
+    .logo{
+        padding-left: 5rem;
+    }
 }

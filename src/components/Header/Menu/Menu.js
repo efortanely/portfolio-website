@@ -9,19 +9,19 @@ const Menu = ({ open }) => {
       <li>
           <a href="/about">
             <span role="img" aria-label="about"/>
-            About —
+            About
           </a>
         </li>
         <li>
           <a href="/work">
             <span role="img" aria-label="work"/>
-            Work —
+            Work
           </a>
         </li>
         <li>
           <a href="/projects">
             <span role="img" aria-label="projects"/>
-            Projects —
+            Projects
           </a>
         </li>
       </ul>

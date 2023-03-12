@@ -24,10 +24,10 @@ export const StyledHome = styled.div`
         transform: ${({ open, width }) => open && width < 550 ? 'translateX(-150%)' : 'translateX(0)'};
     }
 
-    @media (min-width: 551px){
+    @media (min-width: 550px){
         h1 {
             width: 40%;
-            padding-left: 8rem;
+            padding-left: 5rem;
             margin: 0 0;
             padding-top: 3em;
             font-size: 2.3em;
