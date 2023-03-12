@@ -10,25 +10,26 @@ export const StyledHome = styled.div`
     top: 0;
 
     h1 {
-        width: 40%;
-        padding-left: 8rem;
-        margin: 0 0;
+        width: 70%;
+        margin: 0 auto;
+        font-size: 3.2em;
         padding-top: 3em;
-        font-size: 2.3em;
         line-height: 1em;
         letter-spacing: -0.04em;
         color: #79ACA9;
         font-weight: normal;
         font-family: 'Ambit', Arial, Helvetica, sans-serif;
         transition: transform 0.3s ease-in-out;
-        transform: ${({ open }) => open ? 'translateX(-100%)' : 'translateX(0)'};
+        transform: ${({ open }) => open ? 'translateX(-150%)' : 'translateX(0)'};
     }
 
-    @media (max-width: 550px){
+    @media (min-width: 551px){
         h1 {
-            width: 80%;
-            margin: 0 auto;
-            font-size: 3em;
+            width: 40%;
+            padding-left: 8rem;
+            margin: 0 0;
+            padding-top: 3em;
+            font-size: 2.3em;
         }
     }
 `;
