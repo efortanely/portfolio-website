@@ -12,11 +12,11 @@ export const StyledAbout = styled.div`
     top: 0;
 
     @media (min-width: 700px){
-        min-height: 42rem;
+        min-height: 45rem;
     }
 
     .content{
-        padding-top: 9rem;
+        padding-top: 12rem;
         display: flex;
         flex-direction: column;
         height: 80%;
