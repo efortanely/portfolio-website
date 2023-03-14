@@ -15,7 +15,7 @@ export const StyledAbout = styled.div`
         min-height: 42rem;
     }
 
-    .text{
+    .content{
         padding-top: 9rem;
         display: flex;
         flex-direction: column;
@@ -23,6 +23,11 @@ export const StyledAbout = styled.div`
         flex-wrap: wrap;
         width: 80%;
         margin: 0 auto;
+    }
+
+    .content > *{
+        transition: transform 0.3s ease-in-out;
+        transform: ${({ open, width }) => open && width < 700 ? 'translateX(-150%)' : 'translateX(0)'};
     }
 
     h1 {
@@ -34,8 +39,6 @@ export const StyledAbout = styled.div`
         color: white;
         font-weight: normal;
         font-family: 'Ambit', Arial, Helvetica, sans-serif;
-        transition: transform 0.3s ease-in-out;
-        transform: ${({ open, width }) => open && width < 700 ? 'translateX(-150%)' : 'translateX(0)'};
     }
 
     p{
@@ -61,12 +64,12 @@ export const StyledAbout = styled.div`
     }
 
     @media (min-width: 700px){
-        .text{
+        .content{
             padding-left: 5rem;
             margin: 0;
         }
 
-        .text > *{
+        .content > *{
             margin: 0 0;
             width: 30%;
         }

@@ -5,7 +5,7 @@ import { StyledAbout } from './About.styled';
 const About = ({ open, width, linkColor, hoverColor }) => {
   return (
     <StyledAbout open={open} width={width} linkColor={linkColor} hoverColor={hoverColor}>
-      <div className='text'>
+      <div className='content'>
         <h1>ELIZABETH FORTANELY — SOFTWARE ENGINEER — AUSTIN, TX</h1>
         <p>I'm a UT Austin alum with a B.S.A in Computer Science with a Studio Art minor. I have 1.5 years of experience in full-stack web development and data visualization. I'm interested in pursuing new roles in full-stack web development or machine learning! In my free time, I've been working on my <a href="https://www.etsy.com/shop/LizziesCozyCrafts">crochet plushie small business</a> and attending local LGBTQ+ events!</p>
         <p>If you are interested in working with me or have any questions, please don't hesitate to contact me.</p>
