@@ -1,10 +1,10 @@
 import React from 'react';
-import { bool } from 'prop-types';
+import { bool, string } from 'prop-types';
 import { StyledMenu } from './Menu.styled';
 
-const Menu = ({ open }) => {
+const Menu = ({ open, menuColor, hoverColor }) => {
   return (
-    <StyledMenu open={open}>
+    <StyledMenu open={open} menuColor={menuColor} hoverColor={hoverColor}>
       <ul>
       <li>
           <a href="/about">
@@ -31,6 +31,8 @@ const Menu = ({ open }) => {
 
 Menu.propTypes = {
   open: bool.isRequired,
+  menuColor: string.isRequired,
+  hoverColor: string.isRequired,
 }
 
 export default Menu;

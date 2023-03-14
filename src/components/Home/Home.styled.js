@@ -21,7 +21,7 @@ export const StyledHome = styled.div`
         font-weight: normal;
         font-family: 'Ambit', Arial, Helvetica, sans-serif;
         transition: transform 0.3s ease-in-out;
-        transform: ${({ open, width }) => open && width < 550 ? 'translateX(-150%)' : 'translateX(0)'};
+        transform: ${({ open, width }) => open && width < 700 ? 'translateX(-150%)' : 'translateX(0)'};
     }
 
     @media (min-width: 550px){

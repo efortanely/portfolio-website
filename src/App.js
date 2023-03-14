@@ -9,6 +9,8 @@ import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import './App.css';
 
+import { ThemeProvider } from "@material-tailwind/react";
+
 function getWindowDimensions() {
   const { innerWidth: width, innerHeight: height } = window;
   return {
@@ -37,18 +39,17 @@ function App() {
   const width = useWindowDimensions().width;
 
   return (
-    <Router>
-      <div className="App">
-        <Header open={open} setOpen={setOpen} width={width}/>
+    <ThemeProvider>
+      <Router>
         <Routes>
-          <Route exact path="/" element={<Home open={open} width={width}/>}/>
-          <Route path="/about" element={<div><About open={open} width={width}/><Footer/></div>} />
+          <Route exact path="/" element={<div><Header open={open} setOpen={setOpen} width={width}/><Home open={open} width={width}/></div>}/>
+          <Route path="/about" element={<div><Header open={open} setOpen={setOpen} width={width} logoColor="white" menuColor="white" hoverColor='#ffffff88'/><About open={open} width={width} linkColor="white" hoverColor='#ffffff88'/><Footer/></div>} />
           <Route path="/work" element={<div><WorkHistory/><Footer/></div>} />
           <Route path="/projects" element={<div><Work/><Footer/></div>} />
           <Route path="/contact" element={<div><Contact/><Footer/></div>} />
         </Routes>
-      </div>
-    </Router>
+      </Router>
+    </ThemeProvider>
   );
 }
 

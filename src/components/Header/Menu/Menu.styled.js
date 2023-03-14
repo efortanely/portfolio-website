@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const StyledMenu = styled.nav`
   display: flex;
   flex-direction: column;
-  height: 30vh;
+  height: 40vh;
   text-align: right;
   padding-top: 0;
   position: absolute;
@@ -37,7 +37,7 @@ export const StyledMenu = styled.nav`
     font-size: 2rem;
     font-family: 'Ambit', Arial, Helvetica, sans-serif;
     line-height: 1.2; 
-    color: #79ACA9;
+    color: ${({menuColor}) => menuColor };
     text-decoration: none;
     @media (max-width: ${({ theme }) => theme.mobile}) {
       font-size: 1.5rem;
@@ -45,7 +45,7 @@ export const StyledMenu = styled.nav`
     }
 
     &:hover {
-      color: #467976;
+      color: ${({hoverColor}) => hoverColor };
     }
   }
 `;
