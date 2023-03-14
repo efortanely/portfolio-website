@@ -5,7 +5,7 @@ export const StyledAbout = styled.div`
     display: flex;
     flex-direction: column;
     height: 100vh;
-    min-height: 50rem;
+    min-height: 65rem;
     background-image: url(${img});
     background-size: cover;
     background-position: center;

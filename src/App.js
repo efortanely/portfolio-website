@@ -41,13 +41,15 @@ function App() {
   return (
     <ThemeProvider>
       <Router>
-        <Routes>
-          <Route exact path="/" element={<div><Header open={open} setOpen={setOpen} width={width}/><Home open={open} width={width}/></div>}/>
-          <Route path="/about" element={<div><Header open={open} setOpen={setOpen} width={width} logoColor="white" menuColor="white" hoverColor='#ffffff88'/><About open={open} width={width} linkColor="white" hoverColor='#ffffff88'/><Footer/></div>} />
-          <Route path="/work" element={<div><WorkHistory/><Footer/></div>} />
-          <Route path="/projects" element={<div><Work/><Footer/></div>} />
-          <Route path="/contact" element={<div><Contact/><Footer/></div>} />
-        </Routes>
+        <div className="wrapper">
+          <Routes>
+            <Route exact path="/" element={<div><Header open={open} setOpen={setOpen} width={width}/><Home open={open} width={width}/></div>}/>
+            <Route path="/about" element={<div><Header open={open} setOpen={setOpen} width={width} logoColor="white" menuColor="white" hoverColor='#ffffff88'/><About open={open} width={width} linkColor="white" hoverColor='#ffffff88'/><Footer/></div>} />
+            <Route path="/work" element={<div><WorkHistory/><Footer/></div>} />
+            <Route path="/projects" element={<div><Work/><Footer/></div>} />
+            <Route path="/contact" element={<div><Contact/><Footer/></div>} />
+          </Routes>
+        </div>
       </Router>
     </ThemeProvider>
   );

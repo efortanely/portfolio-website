@@ -3,3 +3,7 @@ body {
   color: #f1f1f1;
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.wrapper{
+  overflow-x: hidden;
+}
