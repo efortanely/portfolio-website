@@ -16,7 +16,7 @@ export const StyledAbout = styled.div`
     }
 
     .content{
-        padding-top: 12rem;
+        padding-top: 9rem;
         display: flex;
         flex-direction: column;
         height: 80%;
@@ -67,6 +67,7 @@ export const StyledAbout = styled.div`
         .content{
             padding-left: 5rem;
             margin: 0;
+            padding-top: 12rem;
         }
 
         .content > *{
