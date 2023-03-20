@@ -12,7 +12,7 @@ export const StyledAbout = styled.div`
     top: 0;
 
     @media (min-width: 700px){
-        min-height: 45rem;
+        min-height: 65rem;
     }
 
     .content{
