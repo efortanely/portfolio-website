@@ -43,7 +43,6 @@ export const StyledWorkHistory = styled.div`
     padding: 45px;
     width: 7rem;
     height: 7rem;
-    margin-right: 2rem;
     margin-top: 1rem;
     align-self: center;
     margin-bottom: 1rem;
@@ -61,6 +60,7 @@ export const StyledWorkHistory = styled.div`
       margin-bottom: 0;
       width: 5rem;
       height: 5rem;
+      margin-right: 2rem;
     }
 
     .work-item-logo img {
