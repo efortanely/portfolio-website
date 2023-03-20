@@ -28,12 +28,12 @@ export const StyledWorkHistory = styled.div`
   .work-item {
     display: flex;
     flex-direction: column;
-    margin-bottom: 2rem;
   }
 
   @media (min-width: 700px){
     .work-item {
       flex-direction: row;
+      margin-bottom: 1rem;
     }
   }
   
@@ -43,7 +43,6 @@ export const StyledWorkHistory = styled.div`
     padding: 45px;
     width: 7rem;
     height: 7rem;
-    margin-top: 1rem;
     align-self: center;
     margin-bottom: 1rem;
   }
@@ -61,6 +60,7 @@ export const StyledWorkHistory = styled.div`
       width: 5rem;
       height: 5rem;
       margin-right: 2rem;
+      margin-top: 1rem;
     }
 
     .work-item-logo img {
@@ -105,7 +105,13 @@ export const StyledWorkHistory = styled.div`
   .work-info ul {
     margin: 0;
     padding: 0;
-    padding-bottom: 1rem;
+    padding-bottom: 1.5rem;
+  }
+
+  @media (min-width: 700px){
+    .work-info ul {
+      padding-bottom: .5rem;
+    }
   }
   
   .work-info li {
