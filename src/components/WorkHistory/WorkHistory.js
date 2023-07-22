@@ -16,9 +16,10 @@ const WorkHistory = ({ open, width }) => {
               startDate: 'February 2021',
               endDate: 'August 2022',
               responsibilities: [
-                'Developed My APIs and automatic triaging web apps and metrics dashboards at Snap Labs',
-                'Utilized UX design skills to make Figma web app mock-ups and implemented with React/JavaScript/CSS and Python',
-                'Built Grafana and Looker dashboards using GCP, SQL, and Python'
+                'Developed web apps and metrics dashboards for Snap Labs.',
+                'Worked cross functionally on a web app that allows users to add custom API endpoints to their lenses. Created a searchable, filterable, and sortable table of APIs built with React/JavaScript. Collaborated with designers to create Figma mock-ups for all pages across site.',
+                'Worked in a team of 4 to create an internal web app for debugging Spectacles builds, focused particularly on the automatic triager for logs. Collaborated with developers to create the web app with a React/JavaScript front-end and FastAPI Python back-end. Created Figma mock-ups for self and handed off to other developers on team.',
+                'Worked as a solo developer using GCP BigQuery/SQL/Python to build Grafana and Looker dashboards displaying information about memory usage for Spectacles build artifacts, as well as added functionality to internal Python API for uploading data from builds to Snap Labs’ Grafana and Looker dashboards.'
               ]
             },
             {
