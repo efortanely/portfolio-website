@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './components/Home/Home';
 import About from './components/About/About';
-import Work from './components/Work/Work.js';
+import Projects from './components/Projects/Projects.js';
 import WorkHistory from './components/WorkHistory/WorkHistory';
 import Contact from './components/Contact/Contact';
 import Header from './components/Header/Header';
@@ -46,7 +46,7 @@ function App() {
             <Route exact path="/" element={<div><Header open={open} setOpen={setOpen} width={width}/><Home open={open} width={width}/></div>}/>
             <Route path="/about" element={<div><Header open={open} setOpen={setOpen} width={width} logoColor="white" menuColor="white" hoverColor='#ffffff88'/><About open={open} width={width} linkColor="white" hoverColor='#ffffff88'/><Footer/></div>} />
             <Route path="/work" element={<div><Header open={open} setOpen={setOpen} width={width} logoColor="white" menuColor="white" hoverColor='#ffffff88'/><WorkHistory open={open} width={width}/><Footer/></div>} />
-            <Route path="/projects" element={<div><Work/><Footer/></div>} />
+            <Route path="/projects" element={<div><Header open={open} setOpen={setOpen} width={width} logoColor="white" menuColor="white" hoverColor='#ffffff88'/><Projects open={open} width={width}/><Footer/></div>} />
             <Route path="/contact" element={<div><Contact/><Footer/></div>} />
           </Routes>
         </div>

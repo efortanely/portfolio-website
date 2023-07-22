@@ -40,32 +40,32 @@ export const StyledWorkHistory = styled.div`
   .work-item-logo {
     border-radius: 50%;
     background-color: white;
-    padding: 45px;
-    width: 7rem;
-    height: 7rem;
+    padding: 25px;
+    width: 9rem;
+    height: 9rem;
     align-self: center;
     margin-bottom: 1rem;
   }
   
   .work-item-logo img {
-    width: 7rem;
-    height: 7rem;
+    width: 9rem;
+    height: 9rem;
   }
 
   @media (min-width: 700px){
     .work-item-logo {
       align-self: flex-start;
-      padding: 25px;
+      padding: 20px;
       margin-bottom: 0;
-      width: 5rem;
-      height: 5rem;
+      width: 7rem;
+      height: 7rem;
       margin-right: 2rem;
       margin-top: 1rem;
     }
 
     .work-item-logo img {
-      width: 5rem;
-      height: 5rem;
+      width: 7rem;
+      height: 7rem;
     }
   }
   

@@ -4,8 +4,11 @@ import './Footer.css'
 function Footer() {
   return (
     <footer>
-      <p>Copyright © {new Date().getFullYear()}
-        <span> My Portfolio </span> - All Rights Reserved.
+      <p>
+        © {new Date().getFullYear()} Elizabeth Fortanely.
+      </p>
+      <p>
+        All rights reserved.
       </p>
     </footer>
   );
