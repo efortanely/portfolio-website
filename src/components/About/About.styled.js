@@ -1,12 +1,12 @@
 import styled from 'styled-components';
-import img from '../../images/elizabeth.png'
+import img from '../../assets/elizabeth.png'
 
 export const StyledAbout = styled.div`
     display: flex;
     flex-direction: column;
     height: 100vh;
     min-height: 65rem;
-    background-image: url(${img});
+    background-image: linear-gradient(rgba(0,0,0,0) 82%, rgba(254,204,230,1)), url(${img});
     background-size: cover;
     background-position: center;
     top: 0;
@@ -41,11 +41,16 @@ export const StyledAbout = styled.div`
         font-family: 'Ambit', Arial, Helvetica, sans-serif;
     }
 
+    h4{
+        margin-top: 0;
+        margin-bottom: .5rem;
+    }
+
     p{
         font-family: 'Ambit', Helvetica, Arial, Sans-Serif;
         margin: 0;
         padding-bottom: 2rem;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         font-weight: 600;
         line-height: 1.4rem;
     }
@@ -61,6 +66,7 @@ export const StyledAbout = styled.div`
 
     .button{
         width: 100%;
+        margin-bottom: 2rem !important;
     }
 
     @media (min-width: 700px){
@@ -81,7 +87,7 @@ export const StyledAbout = styled.div`
         }
 
         p{
-            font-size: 1.2rem;
+            .1rem;
             padding-right: 2rem;
         }
     }

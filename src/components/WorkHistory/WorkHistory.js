@@ -1,12 +1,27 @@
 import React from 'react';
-import snap from "../../images/snap.svg";
-import microsoft from "../../images/microsoft.png"
-import ut from "../../images/ut.svg"
+import snap from "../../assets/snap.svg";
+import microsoft from "../../assets/microsoft.png"
+import ut from "../../assets/ut.svg"
+import michaels from "../../assets/michaels.png"
 import CalendarTodayIcon from '@mui/icons-material/CalendarToday';
 import { StyledWorkHistory } from './WorkHistory.styled';
 
 const WorkHistory = ({ open, width }) => {
     const jobs = [
+        {
+          company: 'Michaels',
+          logo: michaels,
+          jobInfo: [
+          {jobTitle: 'Part Time Framer',
+          startDate: 'August 2023',
+          endDate: 'Present',
+          responsibilities: [
+            'Created custom framing solutions',
+            'Designed custom framing solutions for customer\'s artwork, managed orders in custom framing software, and made sales on POS system',
+            'Maintained organization of shop including intaking customer order components, completing regular unloading, labelling, and storing of freight, and disposing of large boxes/cardboard and glass',
+            'Used a variety of shop tools for production of framing projects using archival methods including cutting glass/mats in-house, affixing artwork to mats with variety of techniques, including float mounts and stitching artwork to mat, fitting of art/mats into frames, and finishing backings with paper and variety of hanging hardware'
+          ]}]
+        },
         {
           company: 'Snap Inc.',
           logo: snap,
@@ -16,10 +31,10 @@ const WorkHistory = ({ open, width }) => {
               startDate: 'February 2021',
               endDate: 'August 2022',
               responsibilities: [
-                'Developed web apps and metrics dashboards for Snap Labs.',
-                'Worked cross functionally on a web app that allows users to add custom API endpoints to their lenses. Created a searchable, filterable, and sortable table of APIs built with React/JavaScript. Collaborated with designers to create Figma mock-ups for all pages across site.',
-                'Worked in a team of 4 to create an internal web app for debugging Spectacles builds, focused particularly on the automatic triager for logs. Collaborated with developers to create the web app with a React/JavaScript front-end and FastAPI Python back-end. Created Figma mock-ups for self and handed off to other developers on team.',
-                'Worked as a solo developer using GCP BigQuery/SQL/Python to build Grafana and Looker dashboards displaying information about memory usage for Spectacles build artifacts, as well as added functionality to internal Python API for uploading data from builds to Snap Labs’ Grafana and Looker dashboards.'
+                'Developed web apps and metrics dashboards for Snap Labs',
+                'Worked cross-functionally on a web app that allows users to add custom API endpoints to their lenses. Used React/JavaScript to create a searchable, filterable, and sortable table of APIs. Designed initial Figma mock-ups for all pages in project',
+                'Worked in a team of 4 to create an internal web app for debugging Spectacles builds in order to reduce overall debugging time for developers. Used React/JavaScript and FastApi/Python to develop automatic triager for build artifacts. Designed Figma mock-ups for multiple pages across site',
+                'Worked as a solo developer to build dashboards that offered insights about memory usage in Spectacles’ build artifacts. Used Python/Bash to add script to build pipeline that uploaded memory usage information to GCP BigQuery and Grafana Cloud. Used SQL/LookML to build Grafana/Looker dashboards with tables and data visualizations'
               ]
             },
             {
@@ -27,7 +42,7 @@ const WorkHistory = ({ open, width }) => {
               season: "Summer 2020",
               responsibilities: [
                 'Designed and implemented an internal testing framework for Snap Labs',
-                'Utilized Go and React/JavaScript/CSS to create a gRPC API, server, and web app'
+                'Utilized Go and React/JavaScript to create a gRPC API, server, and web app'
               ]
             }
           ]
@@ -45,12 +60,12 @@ const WorkHistory = ({ open, width }) => {
               ]
             },
             {
-              jobTitle: 'Explorer Intern',
+              jobTitle: 'Software Engineer/Program Manager Intern',
               season: "Summer 2018",
               responsibilities: [
                 'Added browser settings for Intune',
                 'Created specs for Intune telemetry settings for the Microsoft Edge browser',
-                'Utilized C# and TypeScript to support end-to-end integration of Intune telemetry settings into Edge browser'
+                'Used C# and TypeScript to support end-to-end integration of Intune telemetry settings into Edge browser'
               ]
             }
           ]
@@ -59,11 +74,11 @@ const WorkHistory = ({ open, width }) => {
           company: 'The University of Texas at Austin',
           logo: ut,
           jobInfo: [
-          {jobTitle: 'Accelerate Research Initiative Intern',
+          {jobTitle: 'Computational Materials Researcher',
           season: 'Summer 2017',
           responsibilities: [
             'Developed and compared optimization algorithms for molecular structure of alternative energy catalysts',
-            'Utilized Python and NumPy to implement algorithms from research papers and create visualizations of hyperparameter tuning'
+            'Utilized Python and NumPy to implement algorithms from research papers and created visualizations of hyperparameter tuning'
           ]}]
         },
       ];

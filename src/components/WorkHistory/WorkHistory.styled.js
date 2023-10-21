@@ -22,7 +22,8 @@ export const StyledWorkHistory = styled.div`
   .jobs {
     margin-left: auto;
     margin-right: auto;
-    max-width: 80%;
+    width: 80%;
+    max-width: 900px;
   }
   
   .work-item {
@@ -61,11 +62,17 @@ export const StyledWorkHistory = styled.div`
       height: 7rem;
       margin-right: 2rem;
       margin-top: 1rem;
+      align-self: flex-start;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     .work-item-logo img {
-      width: 7rem;
-      height: 7rem;
+      max-width: 6.5rem;
+      max-height: 6.5rem;
+      width: auto;
+      height: auto;
     }
   }
   

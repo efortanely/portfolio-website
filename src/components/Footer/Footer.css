@@ -1,15 +1,47 @@
 footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-  }
-  
-  footer p {
-    font-size: 1.2em;
-    margin: 0;
-  }
-  
-  footer span {
-    font-weight: bold;
-  }
+  background-color: #fecce6;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 1.5em;
+  padding-bottom: 2em;
+}
+
+footer > *{
+  max-width: 20%;
+  overflow-wrap: break-word;
+}
+
+footer .copyright {
+  max-width: 200px;
+}
+
+footer .email {
+  max-width: 200px;
+}
+
+.title{
+  font-size: .8em;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: .1em;
+  line-height: 11.86px;
+  margin-bottom: 0.8em;
+}
+
+.email a{
+  text-decoration: none;
+  color: white;
+}
+
+.social{
+  display: flex;
+  flex-direction: column;
+}
+
+.social a{
+  text-decoration: none;
+  color: white;
+}
