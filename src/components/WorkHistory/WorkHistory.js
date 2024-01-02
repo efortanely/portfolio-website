@@ -14,7 +14,7 @@ const WorkHistory = ({ open, width }) => {
           jobInfo: [
           {jobTitle: 'Part Time Framer',
           startDate: 'August 2023',
-          endDate: 'Present',
+          endDate: 'October 2023',
           responsibilities: [
             'Created custom framing solutions',
             'Designed custom framing solutions for customer\'s artwork, managed orders in custom framing software, and made sales on POS system',

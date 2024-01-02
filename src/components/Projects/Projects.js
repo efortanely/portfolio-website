@@ -19,51 +19,58 @@ const Work = ({ open, width}) => {
     },
     {
       id: 3,
-      title: 'SpotYourFriends',
-      description: 'Made a web app that creates a Spotify playlist from the intersection of multiple users\' Spotify libraries. Built the front-end with HTML, CSS, and JavaScript, and the back-end with the Spotify API, Flask, and python.',
+      title: 'Yarn Colors',
+      description: 'Created a web app for identifying best yarn color match per hex code using TypeScript, React, and Tailwind CSS. Contacted owner of temperature-blanket.com to inquire about data source for hex code values for 4k+ yarn colors, and received data in form of JS object from owner. For user input hex color, the web app displays the best yarn color matches, sorted by the minimum euclidean distance on their CIELAB value.',
       image: 'project3.jpg',
-      link: 'https://github.com/efortanely/SpotYourFriends'
+      link: 'https://github.com/efortanely/yarn-colors'
     },
     {
       id: 4,
-      title: 'Hijinx',
-      description: 'Built a custom Java game engine, including 2D physics and scene/character renderer to create a game demo. This game follows the adventures of a witch and her black cat as they venture through the night, with their mirror portals to guide them along the way.',
-      image: 'project3.jpg',
-      link: 'https://github.com/efortanely/Hijinx'
+      title: 'SpotYourFriends',
+      description: 'Made a web app that creates a Spotify playlist from the intersection of multiple users\' Spotify libraries. Built the front-end with HTML, CSS, and JavaScript, and the back-end with the Spotify API, Flask, and python.',
+      image: 'project4.jpg',
+      link: 'https://github.com/efortanely/SpotYourFriends'
     },
     {
       id: 5,
-      title: 'EmotiSong',
-      description: 'Designed and coded, using Java and XML, an Android app that takes a photo of a group of people and plays the corresponding song best fitting the mood of people in the photo. Queried Musixmatch API for song lyrics and used IBM Watson Natural Language Understanding API to rank their emotional sentiment.',
-      image: 'project3.jpg',
-      link: 'https://github.com/efortanely/EmotiSong'
+      title: 'Hijinx',
+      description: 'Built a custom Java game engine, including 2D physics and scene/character renderer to create a game demo. This game follows the adventures of a witch and her black cat as they venture through the night, with their mirror portals to guide them along the way.',
+      image: 'project5.jpg',
+      link: 'https://github.com/efortanely/Hijinx'
     },
     {
       id: 6,
-      title: 'TabGen',
-      description: 'Implemented a web scraper in Selenium and python to get many musician\'s ukulele tabs from a website. Trained gpt-2-simple on the collected tabs to generate novel songs.',
-      image: 'project3.jpg',
-      link: 'https://github.com/efortanely/Tab-Generator'
+      title: 'EmotiSong',
+      description: 'Designed and coded, using Java and XML, an Android app that takes a photo of a group of people and plays the corresponding song best fitting the mood of people in the photo. Queried Musixmatch API for song lyrics and used IBM Watson Natural Language Understanding API to rank their emotional sentiment.',
+      image: 'project6.jpg',
+      link: 'https://github.com/efortanely/EmotiSong'
     },
     {
       id: 7,
-      title: 'PixReader',
-      description: 'Used python to create an assistive screen reader that reads text and auto-generates captions for images with computer vision. Generated captions with Microsoft Cognitive Services and utilized Google Cloud Text-to-Speech to read the text.',
-      image: 'project3.jpg',
-      link: 'https://github.com/efortanely/PixReader'
+      title: 'TabGen',
+      description: 'Implemented a web scraper in Selenium and python to get many musician\'s ukulele tabs from a website. Trained gpt-2-simple on the collected tabs to generate novel songs.',
+      image: 'project7.jpg',
+      link: 'https://github.com/efortanely/Tab-Generator'
     },
     {
       id: 8,
-      title: 'Stuart Bot',
-      description: 'Used python, ResNet-50, and Onion Omega 2+ to capture photos from a video feed, and tweet to the @TheStuartBot if a cat is present in the scene.',
-      image: 'project3.jpg',
-      link: 'https://github.com/efortanely/Stuart-Bot'
+      title: 'PixReader',
+      description: 'Used python to create an assistive screen reader that reads text and auto-generates captions for images with computer vision. Generated captions with Microsoft Cognitive Services and utilized Google Cloud Text-to-Speech to read the text.',
+      image: 'project8.jpg',
+      link: 'https://github.com/efortanely/PixReader'
     },
     {
       id: 9,
+      title: 'Stuart Bot',
+      description: 'Used python, ResNet-50, and Onion Omega 2+ to capture photos from a video feed, and tweet to the @TheStuartBot if a cat is present in the scene.',
+      image: 'project9.jpg',
+      link: 'https://github.com/efortanely/Stuart-Bot'
+    },
+    {
+      id: 10,
       title: 'Parametric Plotter',
       description: 'Used Java to build a plotter for graphing three-dimensional parametric surfaces in a scene that can be freely rotated. Includes built-in functions, as well as the ability to define custom equations.',
-      image: 'project3.jpg',
+      image: 'project10.jpg',
       link: 'https://github.com/efortanely/Parametric-Plotter'
     }
   ];

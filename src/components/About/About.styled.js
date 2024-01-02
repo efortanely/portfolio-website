@@ -2,30 +2,25 @@ import styled from 'styled-components';
 import img from '../../assets/elizabeth.png'
 
 export const StyledAbout = styled.div`
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    min-height: 65rem;
-    background-image: linear-gradient(rgba(0,0,0,0) 82%, rgba(254,204,230,1)), url(${img});
-    background-size: cover;
-    background-position: center;
-    top: 0;
-
-    @media (min-width: 700px){
-        min-height: 65rem;
-    }
-
     .content{
         padding-top: 9rem;
+        padding-left: 10%;
+        padding-right: 10%;
         display: flex;
         flex-direction: column;
-        height: 80%;
-        flex-wrap: wrap;
-        width: 80%;
         margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        top: 0;
+        background-image: url(${img});
+        background-image: linear-gradient(rgba(0,0,0,0), rgba(254,204,230,1) 800px), url(${img});
+        background-position: top center;
+        background-size: 140%;
+        background-repeat: no-repeat;
     }
 
     .content > *{
+        width: 100%;
         transition: transform 0.3s ease-in-out;
         transform: ${({ open, width }) => open && width < 700 ? 'translateX(-150%)' : 'translateX(0)'};
     }
@@ -33,7 +28,7 @@ export const StyledAbout = styled.div`
     h1 {
         margin: 0;
         padding-bottom: 2rem;
-        font-size: 3.2em;
+        font-size: 3em;
         line-height: 1em;
         letter-spacing: -0.04em;
         color: white;
@@ -69,11 +64,18 @@ export const StyledAbout = styled.div`
         margin-bottom: 2rem !important;
     }
 
-    @media (min-width: 700px){
+    @media (min-width: 850px){
+        background-image: linear-gradient(rgba(0,0,0,0) 82%, rgba(254,204,230,1)), url(${img});
+        background-size: cover;
+        background-position: center;
+
         .content{
-            padding-left: 5rem;
-            margin: 0;
             padding-top: 12rem;
+            width: 100%;
+            flex-direction: row;
+            justify-content: space-evenly;
+            padding-left: 0;
+            padding-right: 0;
         }
 
         .content > *{
@@ -89,6 +91,19 @@ export const StyledAbout = styled.div`
         p{
             .1rem;
             padding-right: 2rem;
+        }
+
+        .intro{
+            min-width: 350px;
+            max-width: 475px;
+        }
+
+        .skills{
+            max-width: 180px;
+        }
+
+        .contact-me{
+            max-width: 300px;
         }
     }
 `;

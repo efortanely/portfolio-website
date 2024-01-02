@@ -14,10 +14,6 @@ footer > *{
   overflow-wrap: break-word;
 }
 
-footer .copyright {
-  max-width: 200px;
-}
-
 footer .email {
   max-width: 200px;
 }
@@ -31,6 +27,11 @@ footer .email {
   margin-bottom: 0.8em;
 }
 
+.resume a{
+  text-decoration: none;
+  color: white;
+}
+
 .email a{
   text-decoration: none;
   color: white;
@@ -42,6 +43,11 @@ footer .email {
 }
 
 .social a{
+  text-decoration: none;
+  color: white;
+}
+
+.source a{
   text-decoration: none;
   color: white;
 }

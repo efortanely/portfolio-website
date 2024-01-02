@@ -46,11 +46,16 @@ export const StyledWorkHistory = styled.div`
     height: 9rem;
     align-self: center;
     margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  
+
   .work-item-logo img {
-    width: 9rem;
-    height: 9rem;
+    max-width: 8rem;
+    max-height: 8rem;
+    width: auto;
+    height: auto;
   }
 
   @media (min-width: 700px){
