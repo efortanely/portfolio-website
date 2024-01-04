@@ -4,7 +4,7 @@ export const StyledProjects = styled.div`
   display: flex;
   flex-direction: column;
   padding-top: 50px;
-  background-color: #fecce6;
+  background-color: rgba(255,184,200,1);
   color: white;
   font-family: 'Ambit', Arial, Helvetica, sans-serif;
   

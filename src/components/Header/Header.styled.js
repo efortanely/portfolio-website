@@ -80,7 +80,6 @@ li {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    // height: 0;
 }
 
 svg{

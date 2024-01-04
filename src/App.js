@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { ThemeProvider } from "@material-tailwind/react";
+import { theme } from './theme.js';
 import Home from './components/Home/Home';
 import About from './components/About/About';
 import Projects from './components/Projects/Projects.js';
@@ -9,7 +11,6 @@ import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import './App.css';
 
-import { ThemeProvider } from "@material-tailwind/react";
 
 function getWindowDimensions() {
   const { innerWidth: width, innerHeight: height } = window;
@@ -39,7 +40,7 @@ function App() {
   const width = useWindowDimensions().width;
 
   return (
-    <ThemeProvider>
+    <ThemeProvider theme={theme}>
       <Router>
         <div className="wrapper">
           <Routes>

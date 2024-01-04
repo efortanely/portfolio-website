@@ -1,0 +1,58 @@
+import styled from 'styled-components';
+
+export const StyledFooter = styled.div`
+  footer {
+    background-color: rgba(255,184,200,1);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 1.5em;
+    padding-bottom: 2em;
+  }
+
+  footer > *{
+    max-width: 20%;
+    overflow-wrap: break-word;
+  }
+
+  footer .email {
+    max-width: 200px;
+  }
+
+  .title{
+    font-size: .8em;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: .1em;
+    line-height: 11.86px;
+    margin-bottom: 0.8em;
+  }
+
+  .resume a{
+    text-decoration: none;
+    color: white;
+  }
+
+  .email a{
+    text-decoration: none;
+    color: white;
+  }
+
+  .social{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .social a{
+    text-decoration: none;
+    color: white;
+  }
+
+  .source a{
+    text-decoration: none;
+    color: white;
+  }
+
+`;

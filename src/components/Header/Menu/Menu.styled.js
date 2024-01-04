@@ -12,13 +12,14 @@ export const StyledMenu = styled.nav`
   overflow: hidden;
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
-      width: 100%;
-    }
+    width: 100%;
+  }
 
   li {
     transition: transform 0.3s ease-in-out;
     transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(140%)'};
-    padding: 0rem 0 2rem 0;
+    margin: 0;
+    padding-top: ${({ listPadding }) => listPadding}rem;
   }
 
   li:nth-child(1) {
