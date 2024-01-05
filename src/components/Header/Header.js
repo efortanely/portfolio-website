@@ -3,9 +3,10 @@ import Burger from "./Burger/Burger";
 import Menu from "./Menu/Menu";
 import { useOnClickOutside } from "../../hooks";
 import logo from '../../assets/logo.svg';
+import logoWhite from "../../assets/logo-white.svg"
 import { StyledHeader } from './Header.styled';
 
-const Header = ({ open, setOpen, width, menuColor="#79ACA9", hoverColor="#467976" }) => {
+const Header = ({ open, setOpen, width, logoColor="white", menuColor="#79ACA9", hoverColor="#467976" }) => {
     const node = useRef(); 
     useOnClickOutside(node, () => setOpen(false));
 
@@ -15,7 +16,7 @@ const Header = ({ open, setOpen, width, menuColor="#79ACA9", hoverColor="#467976
                 <div ref={node}>
                     <a className="logo" href="/">
                         <span>
-                            <img src={logo} alt={'EF Logo'} />
+                            <img src={logoColor === "white"? logoWhite : logo} alt={'EF Logo'} />
                         </span>
                     </a>
                     <Burger open={open} setOpen={setOpen} menuColor={menuColor} />
@@ -25,7 +26,7 @@ const Header = ({ open, setOpen, width, menuColor="#79ACA9", hoverColor="#467976
                 <div className="row">
                     <a className="logo" href="/">
                         <span>
-                            <img src={logo} alt={'EF Logo'} />
+                            <img src={logoColor === "white"? logoWhite : logo} alt={'EF Logo'} />
                         </span>
                     </a>
                     <div className="nav-rt u-pull-right">
