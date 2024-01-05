@@ -94,6 +94,11 @@ export const StyledWorkHistory = styled.div`
   .date > *{
     padding-right: .3rem;
     padding-bottom: .5rem;
+    font-size: 15px;
+  }
+
+  .date p {
+    font-weight: 600 !important;
   }
 
   .work-info h3 {
@@ -106,12 +111,11 @@ export const StyledWorkHistory = styled.div`
     margin: 0;
     font-size: larger;
     padding-bottom: .5rem;
-    color: #f55a91;
+    color: #ff5c82;
   }
   
   .work-info p {
     margin: 0;
-    font-weight: 800;
   }
   
   .work-info ul {

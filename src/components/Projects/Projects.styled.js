@@ -58,7 +58,7 @@ export const StyledProjects = styled.div`
     vertical-align: middle;
     padding-left: .5rem;
     white-space: nowrap;
-    color: rgb(245, 90, 145);
+    color: #ff5c82;
   }
   
   .project-info p {
