@@ -50,9 +50,30 @@ export const StyledFooter = styled.div`
     color: white;
   }
 
+  footer .social .linkedin{
+    padding-bottom: 3px;
+  }
+
   .source a{
     text-decoration: none;
     color: white;
   }
 
+  @media (max-width: ${({theme}) => theme.footerColumnWidth}px) {
+    footer{
+      display: flex;
+      flex-direction: column;
+    }
+
+    footer > * {
+      max-width: none !important;
+      width: auto;
+      padding-bottom: 30px;
+    }
+
+    footer > * > a{
+      max-width: none;
+      font-size: 1.3em;
+    }
+  }
 `;

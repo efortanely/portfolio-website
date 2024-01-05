@@ -9,6 +9,7 @@ const Menu = ({ open, menuColor, hoverColor }) => {
   useEffect(() => {
     const handleResize = () => {
       // 700px is when header stops displaying burger menu
+      // scale between 0.7 and 1.3 rem from 600px - 700px width
       const responsivePadding = 0.7 + 0.6 * (1 - ((700 - window.innerWidth) / (700 - theme.mobile)));
       setListPadding(responsivePadding);
     };
