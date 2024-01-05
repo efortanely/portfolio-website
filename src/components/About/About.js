@@ -16,9 +16,11 @@ const About = ({ open, width, linkColor, hoverColor }) => {
           </p>
           <p>
             Currently, I am seeking roles within primarily front-end or full-stack web development.
-            My future career goals are to be a Machine Learning Engineer, so I have applied for the Master's 
-            in Artificial Intelligence program at UT Austin for Spring 2024 and am awaiting hearing back on 
-            my application status.
+            I am a part of the first cohort for the Master's of Science in Artificial Intelligence at UT Austin,
+            and have experience building and training deep learning models for use in natural language processing 
+            and computer vision. I would love to gain professional experience in machine learning or big data to 
+            complement my part-time professional master's program as I advance in my education towards 
+            becoming a Machine Learning Engineer.
           </p>
         </div>
         <div className='flexbox skills'>

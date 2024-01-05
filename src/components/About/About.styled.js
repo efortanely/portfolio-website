@@ -54,7 +54,7 @@ export const StyledAbout = styled.div`
         font-family: 'Ambit', Helvetica, Arial, Sans-Serif;
         margin: 0;
         padding-bottom: 2rem;
-        font-size: 1.1rem;
+        font-size: 19px;
         font-weight: 600;
         line-height: 1.4rem;
     }
