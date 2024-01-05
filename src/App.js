@@ -45,7 +45,7 @@ function App() {
         <div className="wrapper">
           <Routes>
             <Route exact path="/" element={<div><Header open={open} setOpen={setOpen} width={width}/><Home open={open} width={width}/></div>}/>
-            <Route path="/about" element={<div><Header open={open} setOpen={setOpen} width={width} logoColor="white" menuColor="white" hoverColor='#ffffff88'/><About open={open} width={width} linkColor="white" hoverColor='#ffffff88'/><Footer/></div>} />
+            <Route path="/about" element={<div><Header open={open} setOpen={setOpen} width={width} menuColor="white" hoverColor='#ffffff88'/><About open={open} width={width} linkColor="white" hoverColor='#ffffff88'/><Footer/></div>} />
             <Route path="/work" element={<div><Header open={open} setOpen={setOpen} width={width} logoColor="white" menuColor="white" hoverColor='#ffffff88'/><WorkHistory open={open} width={width}/><Footer/></div>} />
             <Route path="/projects" element={<div><Header open={open} setOpen={setOpen} width={width} logoColor="white" menuColor="white" hoverColor='#ffffff88'/><Projects open={open} width={width}/><Footer/></div>} />
             <Route path="/contact" element={<div><Contact/><Footer/></div>} />

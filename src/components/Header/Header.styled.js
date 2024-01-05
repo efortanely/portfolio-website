@@ -82,7 +82,7 @@ li {
     justify-content: space-between;
 }
 
-svg{
+img{
     margin-top: 1rem;
     margin-left: 1.5rem;
     position: relative; 
@@ -92,7 +92,7 @@ svg{
 }
 
 @media (min-width: 700px){
-    svg{
+    img{
         margin-left: 5rem;
     }
 }
