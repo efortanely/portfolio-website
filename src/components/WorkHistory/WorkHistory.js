@@ -30,19 +30,34 @@ const WorkHistory = ({ open, width }) => {
               jobTitle: 'Software Engineer',
               startDate: 'February 2021',
               endDate: 'August 2022',
-              responsibilities: [
-                'Developed web apps and metrics dashboards for Snap Labs',
-                'Worked cross-functionally on a web app that allows users to add custom API endpoints to their lenses. Used React/JavaScript to create a searchable, filterable, and sortable table of APIs. Designed initial Figma mock-ups for all pages in project',
-                'Worked in a team of 4 to create an internal web app for debugging Spectacles builds in order to reduce overall debugging time for developers. Used React/JavaScript and FastApi/Python to develop automatic triager for build artifacts. Designed Figma mock-ups for multiple pages across site',
-                'Worked as a solo developer to build dashboards that offered insights about memory usage in Spectacles’ build artifacts. Used Python/Bash to add script to build pipeline that uploaded memory usage information to GCP BigQuery and Grafana Cloud. Used SQL/LookML to build Grafana/Looker dashboards with tables and data visualizations'
+              projects: [
+                {name: 'My APIs', 
+                responsibilities: [
+                  'Led front-end development on a web app empowering creators to request access to external API endpoints within Lens Studio',
+                  'Revamped and migrated prototype legacy code from JavaScript to TypeScript/React, introducing a custom table component, enabling searching, sorting, and filtering of API endpoints',
+                  'Designed initial UI mock-ups using Figma, subsequently collaborating with designer to ensure alignment with the Snap Design System'
+                ]},
+                {name: 'Spectacles Test Hub', 
+                responsibilities: [
+                  'Built a Spectacles testing suite web app, boosting developer productivity by 25% through implementation of robust debugging tools',
+                  'Utilized JavaScript/React and Python/FastApi to build web app, including an "automatic triager" page, offering seamless interaction with files from build artifacts',
+                  'Designed UI mock-ups using Figma for multiple pages across the site'
+                ]},
+                {name: 'Build Artifacts Dashboards', 
+                responsibilities: [
+                  'Led development of dashboards for Spectacles\' build artifact insights, identifying redundant memory usage',
+                  'Enhanced internal API functionality using Python, while integrating Python and Bash scripts into the build pipeline to capture and upload build artifact metrics to GCP BigQuery and Grafana Cloud',
+                  'Constructed Grafana and Looker dashboards using SQL and LookML'
+                ]}
               ]
             },
             {
               jobTitle: 'Software Engineer Intern',
               season: "Summer 2020",
               responsibilities: [
-                'Designed and implemented an internal testing framework for Snap Labs',
-                'Utilized Go and React/JavaScript to create a gRPC API, server, and web app'
+                'Designed and implemented a testing framework for Android CTS/VTS tests ran in Spectacles build pipeline',
+                'Utilized Go to build a gRPC API and server with a Google Cloud SQL database, and JavaScript/React to create a web app displaying test results',
+                'Leveraged Docker and Kubernetes for containerization, enabling deployment and execution of the back-end and front-end within Service Mesh'
               ]
             }
           ]
@@ -95,17 +110,30 @@ const WorkHistory = ({ open, width }) => {
           <div className="work-info">
             <h3>{job.company}</h3>
             {job.jobInfo.map((jobA, index) =>(
-              <div className='job'>
+              <div key={index} className='job'>
                 <h4>{jobA.jobTitle}</h4>
                 <div className='date'>
                   <CalendarTodayIcon fontSize='20px'/>
                   <p>{jobA.season ? jobA.season : jobA.startDate + ' - ' + jobA.endDate}</p>
                 </div>
-                <ul>
-                  {jobA.responsibilities.map((responsibility, index) => (
-                    <li key={index}>{responsibility}</li>
-                  ))}
-                </ul>
+                {'projects' in jobA ? (
+                  jobA.projects.map((project, index) => (
+                    <div key={index}>
+                      <h5 id={index}>{project.name}</h5>
+                      <ul>
+                        {project.responsibilities.map((responsibility, index) => (
+                          <li key={index}>{responsibility}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  ))
+                ) :
+                  <ul>
+                    {jobA.responsibilities.map((responsibility, index) => (
+                      <li key={index}>{responsibility}</li>
+                    ))}
+                  </ul>
+                }
               </div>
             ))}
           </div>

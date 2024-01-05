@@ -113,6 +113,12 @@ export const StyledWorkHistory = styled.div`
     padding-bottom: .5rem;
     color: #ff5c82;
   }
+
+  .work-info h5 {
+    margin: 0;
+    font-size: large;
+
+  }
   
   .work-info p {
     margin: 0;
