@@ -2,24 +2,22 @@ import React from 'react';
 import snap from "../../assets/snap.svg";
 import microsoft from "../../assets/microsoft.png"
 import ut from "../../assets/ut.svg"
-import michaels from "../../assets/michaels.png"
+import careerBreak from "../../assets/career-break.svg"
 import CalendarTodayIcon from '@mui/icons-material/CalendarToday';
 import { StyledWorkHistory } from './WorkHistory.styled';
 
 const WorkHistory = ({ open, width }) => {
     const jobs = [
         {
-          company: 'Michaels',
-          logo: michaels,
+          company: 'Career Break',
+          logo: careerBreak,
           jobInfo: [
-          {jobTitle: 'Part Time Framer',
-          startDate: 'August 2023',
-          endDate: 'October 2023',
+          {
+          startDate: 'September 2022',
+          endDate: 'Present',
           responsibilities: [
-            'Created custom framing solutions',
-            'Designed custom framing solutions for customer\'s artwork, managed orders in custom framing software, and made sales on POS system',
-            'Maintained organization of shop including intaking customer order components, completing regular unloading, labelling, and storing of freight, and disposing of large boxes/cardboard and glass',
-            'Used a variety of shop tools for production of framing projects using archival methods including cutting glass/mats in-house, affixing artwork to mats with variety of techniques, including float mounts and stitching artwork to mat, fitting of art/mats into frames, and finishing backings with paper and variety of hanging hardware'
+            'Took a dedicated period for personal development and health reasons, including disability leave from a previous position',
+            'Engaged in roles in food service, retail, and childcare during the break to maintain professional skills and adaptability',
           ]}]
         },
         {
@@ -105,13 +103,13 @@ const WorkHistory = ({ open, width }) => {
       {jobs.map((job, index) => (
         <div key={index} className="work-item">
           <div className='work-item-logo'>
-            <img src={job.logo} alt={`${job.company} Logo`} />
+            <img id={job.company.toLowerCase().split("").filter(char => !"\t\n ".includes(char) && !";:.,?!-'\"(){}".includes(char)).join("")} src={job.logo} alt={`${job.company} Logo`} />
           </div>
           <div className="work-info">
             <h3>{job.company}</h3>
             {job.jobInfo.map((jobA, index) =>(
               <div key={index} className='job'>
-                <h4>{jobA.jobTitle}</h4>
+                {'jobTitle' in jobA ? <h4>{jobA.jobTitle}</h4> : <></>}
                 <div className='date'>
                   <CalendarTodayIcon fontSize='20px'/>
                   <p>{jobA.season ? jobA.season : jobA.startDate + ' - ' + jobA.endDate}</p>

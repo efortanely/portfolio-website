@@ -21,8 +21,8 @@ export const StyledFooter = styled.div`
     max-width: 200px;
   }
 
-  .title{
-    font-size: .8em;
+  .footer-title{
+    font-size: .7em;
     text-transform: uppercase;
     font-weight: 500;
     letter-spacing: .1em;
@@ -68,12 +68,12 @@ export const StyledFooter = styled.div`
     footer > * {
       max-width: none !important;
       width: auto;
-      padding-bottom: 30px;
+      padding-bottom: 20px;
     }
 
     footer > * > a{
       max-width: none;
-      font-size: 1.3em;
+      font-size: 1.1em;
     }
   }
 `;

@@ -29,6 +29,7 @@ export const StyledWorkHistory = styled.div`
   .work-item {
     display: flex;
     flex-direction: column;
+    padding-bottom: 20px;
   }
 
   @media (min-width: 700px){
@@ -58,6 +59,19 @@ export const StyledWorkHistory = styled.div`
     height: auto;
   }
 
+  .work-item-logo #snapinc {
+    height: 10rem !important;
+    max-width: 10rem !important;
+    max-height: 10rem !important;
+  }
+
+  .work-item-logo #theuniversityoftexasataustin {
+    padding-top: 20px;
+    width: 10rem !important;
+    max-width: 10rem !important;
+    max-height: 10rem !important;
+  }
+
   @media (min-width: 700px){
     .work-item-logo {
       align-self: flex-start;
@@ -66,7 +80,7 @@ export const StyledWorkHistory = styled.div`
       width: 7rem;
       height: 7rem;
       margin-right: 2rem;
-      margin-top: 1rem;
+      margin-top: 10px;
       align-self: flex-start;
       display: flex;
       justify-content: center;
@@ -78,6 +92,24 @@ export const StyledWorkHistory = styled.div`
       max-height: 6.5rem;
       width: auto;
       height: auto;
+    }
+
+    .work-item-logo #microsoft {
+      max-width: 6rem;
+      max-height: 6rem;
+    }
+
+    .work-item-logo #snapinc {
+      height: 8rem !important;
+      max-width: 10rem !important;
+      max-height: 8rem !important;
+    }
+
+    .work-item-logo #theuniversityoftexasataustin {
+      padding-top: 16px;
+      width: 10rem !important;
+      max-width: 15rem !important;
+      max-height: 15rem !important;
     }
   }
   
