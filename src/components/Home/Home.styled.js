@@ -11,10 +11,6 @@ export const StyledHome = styled.div`
         background-image: url(${props => props.img});
         background-size: cover;
         background-position: center;
-        display: flex;
-        flex-direction: column;
-        height: 100vh;
-        top: 0;
     }
 
     h1 {
