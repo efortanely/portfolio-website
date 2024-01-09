@@ -27,7 +27,7 @@ const Work = ({ open, width}) => {
     {
       id: 4,
       title: 'SpotYourFriends',
-      description: 'Made a web app that creates a Spotify playlist from the intersection of multiple users\' Spotify libraries. Built the front-end with HTML, CSS, and JavaScript, and the back-end with the Spotify API, Flask, and python.',
+      description: 'Made a web app that creates a Spotify playlist from the intersection of multiple users\' Spotify libraries. Built the front-end with HTML, CSS, and JavaScript, and the back-end with the Spotify API, Flask, and Python.',
       image: 'project4.jpg',
       link: 'https://github.com/efortanely/SpotYourFriends'
     },
@@ -48,21 +48,21 @@ const Work = ({ open, width}) => {
     {
       id: 7,
       title: 'TabGen',
-      description: 'Implemented a web scraper in Selenium and python to get many musician\'s ukulele tabs from a website. Trained gpt-2-simple on the collected tabs to generate novel songs.',
+      description: 'Implemented a web scraper with Python and Selenium to get many musician\'s ukulele tabs from a website. Trained gpt-2-simple on the collected tabs to generate novel songs.',
       image: 'project7.jpg',
       link: 'https://github.com/efortanely/Tab-Generator'
     },
     {
       id: 8,
       title: 'PixReader',
-      description: 'Used python to create an assistive screen reader that reads text and auto-generates captions for images with computer vision. Generated captions with Microsoft Cognitive Services and utilized Google Cloud Text-to-Speech to read the text.',
+      description: 'Used Python to create an assistive screen reader that reads text and auto-generates captions for images with computer vision. Generated captions with Microsoft Cognitive Services and utilized Google Cloud Text-to-Speech to read the text.',
       image: 'project8.jpg',
       link: 'https://github.com/efortanely/PixReader'
     },
     {
       id: 9,
       title: 'Stuart Bot',
-      description: 'Used python, ResNet-50, and Onion Omega 2+ to capture photos from a video feed, and tweet to the @TheStuartBot if a cat is present in the scene.',
+      description: 'Used Python, ResNet-50, and Onion Omega 2+ to capture photos from a video feed, and tweet to the @TheStuartBot if a cat is present in the scene.',
       image: 'project9.jpg',
       link: 'https://github.com/efortanely/Stuart-Bot'
     },
