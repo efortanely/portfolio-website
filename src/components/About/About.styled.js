@@ -51,6 +51,7 @@ export const StyledAbout = styled.div`
     h4{
         margin-top: 0;
         margin-bottom: .5rem;
+        color: white;
     }
 
     p{
@@ -60,6 +61,7 @@ export const StyledAbout = styled.div`
         font-size: 19px;
         font-weight: 600;
         line-height: 1.4rem;
+        color: white;
     }
 
     a{
