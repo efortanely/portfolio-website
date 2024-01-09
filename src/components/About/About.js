@@ -1,11 +1,23 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Button } from "@material-tailwind/react";
 import Resume from "../../assets/resume.pdf";
 import { StyledAbout } from './About.styled';
+import backgroundImage from '../../assets/elizabeth.png';
 
 const About = ({ open, width, linkColor, hoverColor }) => {
+  const [imageLoaded, setImageLoaded] = useState(false);
+
+  useEffect(() => {
+    const img = new Image();
+    img.src = backgroundImage;
+
+    img.onload = () => {
+      setImageLoaded(true);
+    }
+  }, []);
+
   return (
-    <StyledAbout open={open} width={width} linkColor={linkColor} hoverColor={hoverColor}>
+    <StyledAbout className={`about${ imageLoaded ? ' image-loaded' : ''}`} open={open} width={width} linkColor={linkColor} hoverColor={hoverColor} img={backgroundImage}>
       <div className='content'>
         <div className='flexbox intro'>
           <h1>ELIZABETH FORTANELY — SOFTWARE ENGINEER — AUSTIN, TX</h1>

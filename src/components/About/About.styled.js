@@ -1,19 +1,22 @@
 import styled from 'styled-components';
-import img from '../../assets/elizabeth.png'
 
 export const StyledAbout = styled.div`
-    @media (max-width: 849px){
-        background-image: url(${img});
-        background-image: linear-gradient(rgba(0,0,0,0) 70vw, rgba(255,184,200,1) 90vw), url(${img});
+    background-color: rgb(255,184,200);
+
+    &.image-loaded {
+        background-image: url(${props => props.img});
+        background-image: linear-gradient(rgba(0,0,0,0) 70vw, rgba(255,184,200,1) 90vw), url(${props => props.img});
         background-position: top center;
         background-size: 140%;
         background-repeat: no-repeat;
     }
 
     @media (min-width: 850px){
-        background-image: linear-gradient(rgba(0,0,0,0) 82%, rgba(255,184,200,1)), url(${img});
-        background-size: cover;
-        background-position: center;
+        &.image-loaded {
+            background-image: linear-gradient(rgba(0,0,0,0) 82%, rgba(255,184,200,1)),  url(${props => props.img});
+            background-size: cover;
+            background-position: center;
+        }
     }
 
     .content{

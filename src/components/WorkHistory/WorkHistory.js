@@ -68,17 +68,15 @@ const WorkHistory = ({ open, width }) => {
               jobTitle: 'Software Engineer Intern',
               season: 'Summer 2019',
               responsibilities: [
-                'Generated visualizations for Intune',
-                'Created Power BI reports from logs to improve data analysis and reporting'
+                'Processed Intune log data from Excel into Power BI reports, improving data analysis and reporting'
               ]
             },
             {
               jobTitle: 'Software Engineer/Program Manager Intern',
               season: "Summer 2018",
               responsibilities: [
-                'Added browser settings for Intune',
-                'Created specs for Intune telemetry settings for the Microsoft Edge browser',
-                'Used C# and TypeScript to support end-to-end integration of Intune telemetry settings into Edge browser'
+                'Developed a technical spec, obtained approval, and guided the creation of feature for implementation by colleague',
+                'Utilized C# and TypeScript for implementation of telemetry reporting setting in Microsoft Edge, ensuring accuracy with integration and end-to-end testing'
               ]
             }
           ]
@@ -90,8 +88,9 @@ const WorkHistory = ({ open, width }) => {
           {jobTitle: 'Computational Materials Researcher',
           season: 'Summer 2017',
           responsibilities: [
-            'Developed and compared optimization algorithms for molecular structure of alternative energy catalysts',
-            'Utilized Python and NumPy to implement algorithms from research papers and created visualizations of hyperparameter tuning'
+            'Researched optimization algorithms in UT\'s Accelerated Research Initiative\'s Computation Materials stream, focusing on optimizing molecular geometry in alternative energy catalysts',
+            'Implemented popular optimization techniques from academic papers using Python and NumPy',
+            'Created visualizations of potential energy surfaces with Matplotlib to determine most effective algorithm and hyperparameter values'
           ]}]
         },
       ];

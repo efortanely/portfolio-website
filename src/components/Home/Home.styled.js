@@ -1,14 +1,21 @@
 import styled from 'styled-components';
-import img from "../../assets/background.jpg";
 
 export const StyledHome = styled.div`
+    background-color: #ffe7f3;
     display: flex;
     flex-direction: column;
     height: 100vh;
-    background-image: url(${img});
-    background-size: cover;
-    background-position: center;
     top: 0;
+
+    &.image-loaded {
+        background-image: url(${props => props.img});
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        top: 0;
+    }
 
     h1 {
         width: 70%;
