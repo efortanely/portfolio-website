@@ -2,6 +2,8 @@ import styled from 'styled-components';
 
 export const StyledHeader = styled.div`
 height: 0px;
+position: sticky;
+top: 0;
 
 a{
     display: inline-block;
@@ -22,10 +24,6 @@ li {
     margin-bottom: 1rem;
     display: list-item;
     text-align: -webkit-match-parent;
-}
-
-.header {
-    width: 100%;
 }
 
 @media (min-width: 700px){
