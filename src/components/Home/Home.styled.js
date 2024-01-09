@@ -5,6 +5,7 @@ export const StyledHome = styled.div`
     display: flex;
     flex-direction: column;
     height: 100vh;
+    max-height: -webkit-fill-available;
     top: 0;
 
     &.image-loaded {
