@@ -88,7 +88,7 @@ const WorkHistory = ({ open, width }) => {
           {jobTitle: 'Computational Materials Researcher',
           season: 'Summer 2017',
           responsibilities: [
-            'Researched optimization algorithms in UT\'s Accelerated Research Initiative\'s Computation Materials stream, focusing on optimizing molecular geometry in alternative energy catalysts',
+            'Researched optimization algorithms in UT\'s Accelerated Research Initiative\'s Computational Materials stream, focusing on optimizing molecular geometry in alternative energy catalysts',
             'Implemented popular optimization techniques from academic papers using Python and NumPy',
             'Created visualizations of potential energy surfaces with Matplotlib to determine most effective algorithm and hyperparameter values'
           ]}]

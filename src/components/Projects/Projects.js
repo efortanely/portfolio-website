@@ -20,7 +20,7 @@ const Work = ({ open, width}) => {
     {
       id: 3,
       title: 'Yarn Colors',
-      description: 'Created a web app for identifying best yarn color match per hex code using TypeScript, React, and Tailwind CSS. Contacted owner of temperature-blanket.com to inquire about data source for hex code values for 4k+ yarn colors, and received data in form of JS object from owner. For user input hex color, the web app displays the best yarn color matches, sorted by the minimum euclidean distance on their CIELAB value.',
+      description: 'Created a React web app with TypeScript/Tailwind CSS to find best yarn matches for user-entered color hex codes. Corresponded with temperature-blanket.com owner to obtain data for hex code values for over 4,000 yarn colorways. Ranked best yarn colorway matches with euclidean distances on CIELAB values using the D3.js library.',
       image: 'project3.jpg',
       link: 'https://github.com/efortanely/yarn-colors'
     },
