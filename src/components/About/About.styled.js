@@ -110,7 +110,7 @@ export const StyledAbout = styled.div`
         }
 
         .skills{
-            max-width: 180px;
+            max-width: 210px;
         }
 
         .contact-me{
