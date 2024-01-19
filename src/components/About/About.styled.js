@@ -46,6 +46,7 @@ export const StyledAbout = styled.div`
         color: white;
         font-weight: normal;
         font-family: 'Ambit', Arial, Helvetica, sans-serif;
+        text-transform: uppercase;
     }
 
     h4{

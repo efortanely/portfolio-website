@@ -20,7 +20,7 @@ const About = ({ open, width, linkColor, hoverColor }) => {
     <StyledAbout className={`about${ imageLoaded ? ' image-loaded' : ''}`} open={open} width={width} linkColor={linkColor} hoverColor={hoverColor} img={backgroundImage}>
       <div className='content'>
         <div className='flexbox intro'>
-          <h1>ELIZABETH FORTANELY — SOFTWARE ENGINEER — AUSTIN, TX</h1>
+          <h1>Elizabeth Fortanely — Software Engineer — Austin, TX</h1>
           <p>My passion lies at the intersection of technology and creativity.
             I love exploring creative coding through a number of areas of programming,
             from front-end web development, to generative deep learning, to game development, and beyond!

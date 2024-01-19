@@ -17,7 +17,7 @@ const Home = ({ open, width }) => {
 
   return (
     <StyledHome className={`home${ imageLoaded ? ' image-loaded' : ''}`} open={open} width={width} img={backgroundImage}>
-      <h1>ELIZABETH FORTANELY — SOFTWARE ENGINEER — AUSTIN, TX</h1>
+      <h1>Elizabeth Fortanely — Software Engineer — Austin, TX</h1>
     </StyledHome>
   );
 }
