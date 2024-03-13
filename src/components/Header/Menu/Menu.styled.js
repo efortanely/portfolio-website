@@ -36,8 +36,8 @@ export const StyledMenu = styled.nav`
 
   a {
     font-size: 2rem;
-    font-family: 'Ambit', Arial, Helvetica, sans-serif;
-    line-height: 1.2; 
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.4; 
     color: ${({menuColor}) => menuColor };
     text-decoration: none;
     @media (max-width: ${({ theme }) => theme.mobile}) {

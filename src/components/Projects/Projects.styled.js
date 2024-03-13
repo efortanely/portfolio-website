@@ -6,7 +6,7 @@ export const StyledProjects = styled.div`
   padding-top: 50px;
   background-color: rgba(255,184,200,1);
   color: white;
-  font-family: 'Ambit', Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   
   > *{
     transition: transform 0.3s ease-in-out;
@@ -63,7 +63,7 @@ export const StyledProjects = styled.div`
   
   .project-info p {
     margin: 0;
-    font-weight: 600;
+    font-weight: 500;
     font-size: large;
   }
 `;

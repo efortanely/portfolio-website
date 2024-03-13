@@ -45,7 +45,7 @@ export const StyledAbout = styled.div`
         letter-spacing: -0.04em;
         color: white;
         font-weight: normal;
-        font-family: 'Ambit', Arial, Helvetica, sans-serif;
+        font-family: Arial, Helvetica, sans-serif;
         text-transform: uppercase;
     }
 
@@ -56,11 +56,11 @@ export const StyledAbout = styled.div`
     }
 
     p{
-        font-family: 'Ambit', Helvetica, Arial, Sans-Serif;
+        font-family: Helvetica, Arial, Sans-Serif;
         margin: 0;
         padding-bottom: 2rem;
         font-size: 19px;
-        font-weight: 600;
+        font-weight: 500;
         line-height: 1.4rem;
         color: white;
     }

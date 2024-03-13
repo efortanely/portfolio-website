@@ -23,7 +23,7 @@ export const StyledHome = styled.div`
         letter-spacing: -0.04em;
         color: #79ACA9;
         font-weight: normal;
-        font-family: 'Ambit', Arial, Helvetica, sans-serif;
+        font-family: Arial, Helvetica, sans-serif;
         transition: transform 0.3s ease-in-out;
         transform: ${({ open, width }) => open && width < 700 ? 'translateX(-150%)' : 'translateX(0)'};
         text-transform: uppercase;
