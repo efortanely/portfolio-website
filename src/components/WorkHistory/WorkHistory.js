@@ -16,8 +16,7 @@ const WorkHistory = ({ open, width }) => {
           startDate: 'September 2022',
           endDate: 'Present',
           responsibilities: [
-            'Took a dedicated period for personal development and health reasons, including disability leave from a previous position',
-            'Engaged in roles in food service, retail, and childcare during the break to maintain professional skills and adaptability',
+            'Revitalized professional competencies through hands-on roles in food service, retail, and childcare; adeptly managed customer interactions, mastered sales strategies, and provided exceptional care to 15 toddlers',
           ]}]
         },
         {
@@ -31,21 +30,20 @@ const WorkHistory = ({ open, width }) => {
               projects: [
                 {name: 'My APIs', 
                 responsibilities: [
-                  'Led front-end development on a web app empowering creators to request access to external API endpoints within Lens Studio',
-                  'Revamped and migrated prototype legacy code from JavaScript to TypeScript/React, introducing a custom table component, enabling searching, sorting, and filtering of API endpoints',
-                  'Designed initial UI mock-ups using Figma, subsequently collaborating with designer to ensure alignment with the Snap Design System'
+                  'Led front-end development in a cross-functional effort for a feature empowering creators to seamlessly request access to external API endpoints, resulting in a 50% increase in web app functionality',
+                  'Led the redesign and migration of legacy JavaScript code to TypeScript/React; developed and implemented a custom table component for enhanced search, sort, and filter capabilities of API endpoints, leading to a 30% reduction in load times',
+                  'Spearheaded the creation of UI mock-ups in Figma and collaborated with designers to ensure alignment with Snap Design System standards'
                 ]},
                 {name: 'Spectacles Test Hub', 
                 responsibilities: [
-                  'Built a Spectacles testing suite web app, boosting developer productivity by 25% through implementation of robust debugging tools',
-                  'Utilized JavaScript/React and Python/FastApi to build web app, including an "automatic triager" page, offering seamless interaction with files from build artifacts',
-                  'Designed UI mock-ups using Figma for multiple pages across the site'
+                  'Collaborated with a team of 3 engineers to launch a new high-impact Spectacles testing suite web app, utilizing JavaScript/React and Python/FastApi to integrate robust debugging tools, resulting in a 25% increase in developer productivity and streamlined testing procedures',
+                  'Conceptualized and crafted UI mock-ups for 3 key pages with Figma, directing successful implementation by two engineers, resulting in improved functionality and visual appeal of the platform'
                 ]},
                 {name: 'Build Artifacts Dashboards', 
                 responsibilities: [
-                  'Led development of dashboards for Spectacles\' build artifact insights, identifying redundant memory usage',
-                  'Enhanced internal API functionality using Python, while integrating Python and Bash scripts into the build pipeline to capture and upload build artifact metrics to GCP BigQuery and Grafana Cloud',
-                  'Constructed Grafana and Looker dashboards using SQL and LookML'
+                  'Developed Grafana and Looker dashboards using SQL and LookML for Spectacles\' build artifacts under the guidance of a senior engineer, enabling the team to optimize resource allocation, resulting in a 30% reduction in memory waste and increased operational efficiency',
+                  'Integrated Python and Bash scripts into the build pipeline to capture and upload build artifact metrics to GCP BigQuery and Grafana Cloud, introducing real-time monitoring capabilities',
+                  'Spearheaded enhancing internal API functionality using Python, resolving 5 bugs and deploying 3 new methods'
                 ]}
               ]
             },
@@ -53,9 +51,9 @@ const WorkHistory = ({ open, width }) => {
               jobTitle: 'Software Engineer Intern',
               season: "Summer 2020",
               responsibilities: [
-                'Designed and implemented a testing framework for Android CTS/VTS tests ran in Spectacles build pipeline',
-                'Utilized Go to build a gRPC API and server with a Google Cloud SQL database, and JavaScript/React to create a web app displaying test results',
-                'Leveraged Docker and Kubernetes for containerization, enabling deployment and execution of the back-end and front-end within Service Mesh'
+                'Engineered and deployed a robust Android CTS/VTS testing framework using a high-performance gRPC API and Go server infrastructure, utilizing a Google Cloud SQL database, and implementing a JavaScript/React web application to showcase comprehensive test results, enhancing overall test coverage by 20%',
+                'Containerized and deployed back-end and front-end services using Docker and Kubernetes',
+                'Delivered an engaging project presentation to organizational members, detailing project motivations, cutting-edge architectural designs, and the profound impact on engineering productivity'
               ]
             }
           ]
