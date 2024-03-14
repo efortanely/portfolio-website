@@ -6,7 +6,7 @@ const Work = ({ open, width}) => {
     {
       id: 1,
       title: 'Variational Autoencoder for Text Generation',
-      description: 'Designed and trained a model for text generations with the ability to vary the sentiment. Utilized NLTK and GloVe for data preparation, PyTorch for model design and training, with an LSTM encoder and CNN decoder. Wrote a technical report in the format of a NeurIPS submission.',
+      description: 'Designed and trained a model for text generation with the ability to vary the sentiment. Utilized NLTK and GloVe for data preparation, PyTorch for model design and training, with an LSTM encoder and CNN decoder. Wrote a technical report in the format of a NeurIPS submission.',
       image: 'project1.jpg',
       link: 'https://github.com/efortanely/variational-autencoders-for-text-generation'
     },
