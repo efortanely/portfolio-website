@@ -43,7 +43,7 @@ const WorkHistory = ({ open, width }) => {
                 responsibilities: [
                   'Developed Grafana and Looker dashboards using SQL and LookML for Spectacles\' build artifacts under the guidance of a senior engineer, enabling the team to optimize resource allocation, resulting in a 30% reduction in memory waste and increased operational efficiency',
                   'Integrated Python and Bash scripts into the build pipeline to capture and upload build artifact metrics to GCP BigQuery and Grafana Cloud, introducing real-time monitoring capabilities',
-                  'Spearheaded enhancing internal API functionality using Python, resolving 5 bugs and deploying 3 new methods'
+                  'Spearheaded enhancing internal API functionality using Python'
                 ]}
               ]
             },
