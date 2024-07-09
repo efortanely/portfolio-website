@@ -13,7 +13,7 @@ const WorkHistory = ({ open, width }) => {
           logo: careerBreak,
           jobInfo: [
           {
-          startDate: 'September 2022',
+          startDate: 'Sept 2022',
           endDate: 'Present',
           responsibilities: [
             'Revitalized professional competencies through hands-on roles in food service, retail, and childcare; adeptly managed customer interactions, mastered sales strategies, and provided exceptional care to 15 toddlers',
@@ -25,35 +25,23 @@ const WorkHistory = ({ open, width }) => {
           jobInfo: [
             {
               jobTitle: 'Software Engineer',
-              startDate: 'February 2021',
-              endDate: 'August 2022',
-              projects: [
-                {name: 'My APIs', 
+              startDate: 'Feb 2021',
+              endDate: 'Aug 2022',
                 responsibilities: [
-                  'Led front-end development in a cross-functional effort for a feature empowering creators to seamlessly request access to external API endpoints, resulting in a 50% increase in web app functionality',
-                  'Led the redesign and migration of legacy JavaScript code to TypeScript/React; developed and implemented a custom table component for enhanced search, sort, and filter capabilities of API endpoints, leading to a 30% reduction in load times',
-                  'Spearheaded the creation of UI mock-ups in Figma and collaborated with designers to ensure alignment with Snap Design System standards'
-                ]},
-                {name: 'Spectacles Test Hub', 
-                responsibilities: [
-                  'Collaborated with a team of 3 engineers to launch a new high-impact Spectacles testing suite web app, utilizing JavaScript/React and Python/FastApi to integrate robust debugging tools, resulting in a 25% increase in developer productivity and streamlined testing procedures',
-                  'Conceptualized and crafted UI mock-ups for 3 key pages with Figma, directing successful implementation by two engineers, resulting in improved functionality and visual appeal of the platform'
-                ]},
-                {name: 'Build Artifacts Dashboards', 
-                responsibilities: [
-                  'Developed Grafana and Looker dashboards using SQL and LookML for Spectacles\' build artifacts under the guidance of a senior engineer, enabling the team to optimize resource allocation, resulting in a 30% reduction in memory waste and increased operational efficiency',
-                  'Integrated Python and Bash scripts into the build pipeline to capture and upload build artifact metrics to GCP BigQuery and Grafana Cloud, introducing real-time monitoring capabilities',
-                  'Spearheaded enhancing internal API functionality using Python'
-                ]}
-              ]
+                  'Led front-end development for ‘My Lenses APIs Portal’ React web app by migrating legacy JavaScript to TypeScript and implementing new components',
+                  'Engineered a testing suite React web app from scratch, implementing debugging tools with JavaScript and Python/FastApi back-end routes',
+                  'Created UI mock-ups for pages using Figma and directed their successful implementation, resulting in improved platform functionality and visual appeal',
+                  'Built BI dashboards in Grafana and Looker using SQL and automated data uploads in the build pipeline with Python and Bash, enabling real-time monitoring of build artifacts',
+                  'Enhanced internal Python API integrations with GCP BigQuery by adding functionality and resolving critical bugs'
+                ]
             },
             {
               jobTitle: 'Software Engineer Intern',
-              season: "Summer 2020",
+              startDate: 'May 2020',
+              endDate: 'Aug 2020',
               responsibilities: [
-                'Engineered and deployed a robust Android CTS/VTS testing framework using a high-performance gRPC API and Go server infrastructure, utilizing a Google Cloud SQL database, and implementing a JavaScript/React web application to showcase comprehensive test results, enhancing overall test coverage by 20%',
-                'Containerized and deployed back-end and front-end services using Docker and Kubernetes',
-                'Delivered an engaging project presentation to organizational members, detailing project motivations, cutting-edge architectural designs, and the profound impact on engineering productivity'
+                'Developed a high-performance Android CTS/VTS testing framework with a gRPC API, Go server, Google Cloud SQL database, and a React web app using JavaScript',
+                'Containerized and deployed back-end and front-end microservices using Docker and Kubernetes'
               ]
             }
           ]
@@ -64,17 +52,19 @@ const WorkHistory = ({ open, width }) => {
           jobInfo: [
             {
               jobTitle: 'Software Engineer Intern',
-              season: 'Summer 2019',
+              startDate: 'May 2019',
+              endDate: 'July 2019',
               responsibilities: [
-                'Processed Intune log data from Excel into Power BI reports, improving data analysis and reporting'
+                'Created Power BI reports from Excel-based Intune log data, improving data analysis and reporting'
               ]
             },
             {
               jobTitle: 'Software Engineer/Program Manager Intern',
-              season: "Summer 2018",
+              startDate: 'May 2018',
+              endDate: 'Aug 2018',
               responsibilities: [
-                'Developed a technical spec, obtained approval, and guided the creation of feature for implementation by colleague',
-                'Utilized C# and TypeScript for implementation of telemetry reporting setting in Microsoft Edge, ensuring accuracy with integration and end-to-end testing'
+                'Developed and tested an Edge telemetry reporting setting using C# and TypeScript',
+                'Wrote a technical spec and guided the creation of Edge feature'
               ]
             }
           ]
@@ -83,12 +73,12 @@ const WorkHistory = ({ open, width }) => {
           company: 'The University of Texas at Austin',
           logo: ut,
           jobInfo: [
-          {jobTitle: 'Computational Materials Researcher',
-          season: 'Summer 2017',
-          responsibilities: [
-            'Researched optimization algorithms in UT\'s Accelerated Research Initiative\'s Computational Materials stream, focusing on optimizing molecular geometry in alternative energy catalysts',
-            'Implemented popular optimization techniques from academic papers using Python and NumPy',
-            'Created visualizations of potential energy surfaces with Matplotlib to determine most effective algorithm and hyperparameter values'
+          {
+            jobTitle: 'Student Researcher',
+            startDate: 'June 2017',
+            endDate: 'July 2017',
+            responsibilities: [
+            'Implemented popular optimization algorithms using Python and NumPy on molecular geometry structures and created visualizations of potential energy surfaces with Matplotlib'
           ]}]
         },
       ];
@@ -109,26 +99,13 @@ const WorkHistory = ({ open, width }) => {
                 {'jobTitle' in jobA ? <h4>{jobA.jobTitle}</h4> : <></>}
                 <div className='date'>
                   <CalendarTodayIcon fontSize='20px'/>
-                  <p>{jobA.season ? jobA.season : jobA.startDate + ' - ' + jobA.endDate}</p>
+                  <p>{jobA.startDate + ' - ' + jobA.endDate}</p>
                 </div>
-                {'projects' in jobA ? (
-                  jobA.projects.map((project, index) => (
-                    <div key={index}>
-                      <h5 id={index}>{project.name}</h5>
-                      <ul>
-                        {project.responsibilities.map((responsibility, index) => (
-                          <li key={index}>{responsibility}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  ))
-                ) :
-                  <ul>
-                    {jobA.responsibilities.map((responsibility, index) => (
-                      <li key={index}>{responsibility}</li>
-                    ))}
-                  </ul>
-                }
+                <ul>
+                  {jobA.responsibilities.map((responsibility, index) => (
+                    <li key={index}>{responsibility}</li>
+                  ))}
+                </ul>
               </div>
             ))}
           </div>

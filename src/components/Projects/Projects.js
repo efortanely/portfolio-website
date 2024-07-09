@@ -13,7 +13,7 @@ const Work = ({ open, width}) => {
     {
       id: 2,
       title: 'Pets 4 Me',
-      description: 'As part of a team of 6, developed a web app consolidating information on local adoptable pets and breed information. Utilized Python, Flask, and SQLAlchemy to create the database schema and API. Implemented the frontend with React/TypeScript/CSS.',
+      description: 'Developed a React web app showcasing animal shelters, pet listings, and breed details. Engineered and tested a high-performance API using Python, Flask, and SQLAlchemy. Designed UI mock-ups using Marvel App, contributed front-end features with TypeScript, and conducted rigorous testing with Mocha and Selenium.',
       image: 'project2.jpg',
       link: 'https://github.com/efortanely/Pets4Me'
     },
