@@ -6,7 +6,7 @@ const Work = ({ open, width}) => {
     {
       id: 0,
       title: 'Mitigating Positional Biases with Adversarial SQuAD',
-      description: 'Trained and evaluated a HuggingFace ELECTRA transformer model using Python, PyTorch, NLTK, and spaCy, implementing novel adversarial data augmentation techniques on SQuAD and Adversarial SQuAD datasets. Applied inoculation by fine-tuning to enhance model robustness against adversarial text in question-answering task. Documented methodology and results in a research paper formatted to ACL standards.',
+      description: 'Trained and evaluated a HuggingFace ELECTRA transformer model using Python, PyTorch, NLTK, and SpaCy, implementing novel adversarial data augmentation techniques on SQuAD and Adversarial SQuAD datasets. Applied inoculation by fine-tuning to enhance model robustness against adversarial text in question-answering task. Documented methodology and results in a research paper formatted to ACL standards.',
       image: 'project1.jpg',
       link: 'https://github.com/efortanely/mitigating-positional-biases-with-adversarial-squad'
     },
