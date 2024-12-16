@@ -56,6 +56,7 @@ const About = ({ open, width, linkColor, hoverColor }) => {
               Scikit-Learn<br/>
               NLTK<br/>
               SciPy<br/>
+              SpaCy<br/>
               Matplotlib<br/>
               NumPy<br/>
               Pandas
