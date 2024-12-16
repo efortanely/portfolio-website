@@ -23,11 +23,11 @@ const About = ({ open, width, linkColor, hoverColor }) => {
           <h1>Elizabeth Fortanely — Software Engineer — Austin, TX</h1>
           <p>My passion lies at the intersection of technology and creativity.
             I love exploring creative coding through a number of areas of programming,
-            from front-end web development, to generative deep learning, to game development, and beyond!
+            from generative deep learning, to front-end web development, to game development, and beyond!
             You can find a sampling of my experience in my <a href={Resume} download="fortanely-resume.pdf">resume</a>.
           </p>
           <p>
-            Currently, I am seeking roles within primarily front-end or full-stack web development.
+            Currently, I am seeking internships in Machine Learning Engineering.
             I am a part of the first cohort for the Master's of Science in Artificial Intelligence at UT Austin,
             and have experience building and training deep learning models for use in natural language processing 
             and computer vision. I would love to gain professional experience in machine learning or big data to 
@@ -39,6 +39,7 @@ const About = ({ open, width, linkColor, hoverColor }) => {
           <div className='languages'>
             <h4>Languages</h4>
             <p>
+              Python<br/>
               JavaScript/TypeScript<br/>
               Go<br/>
               HTML/CSS<br/>
@@ -46,6 +47,18 @@ const About = ({ open, width, linkColor, hoverColor }) => {
               C++<br/>
               C#<br/>
               C
+            </p>
+          </div>
+          <div className='machine-learning'>
+          <h4>Machine Learning</h4>
+            <p>
+              PyTorch<br/>
+              Scikit-Learn<br/>
+              NLTK<br/>
+              SciPy<br/>
+              Matplotlib<br/>
+              NumPy<br/>
+              Pandas
             </p>
           </div>
           <div className='web-dev'>
@@ -61,17 +74,6 @@ const About = ({ open, width, linkColor, hoverColor }) => {
               Kubernetes<br/>
               Figma<br/>
               Bootstrap
-            </p>
-          </div>
-          <div className='machine-learning'>
-          <h4>Machine Learning</h4>
-            <p>
-              PyTorch<br/>
-              Scikit-Learn<br/>
-              NLTK<br/>
-              Matplotlib<br/>
-              NumPy<br/>
-              Pandas
             </p>
           </div>
         </div>
