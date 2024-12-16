@@ -2,22 +2,26 @@ import React from 'react';
 import snap from "../../assets/snap.svg";
 import microsoft from "../../assets/microsoft.png"
 import ut from "../../assets/ut.svg"
-import careerBreak from "../../assets/career-break.svg"
+import generalAssembly from "../../assets/general-assembly.png"
 import CalendarTodayIcon from '@mui/icons-material/CalendarToday';
 import { StyledWorkHistory } from './WorkHistory.styled';
 
 const WorkHistory = ({ open, width }) => {
     const jobs = [
         {
-          company: 'Career Break',
-          logo: careerBreak,
+          company: 'General Assembly',
+          logo: generalAssembly,
           jobInfo: [
-          {
-          startDate: 'Sept 2022',
-          endDate: 'Present',
-          responsibilities: [
-            'Revitalized professional competencies through hands-on roles in food service, retail, and childcare; adeptly managed customer interactions, mastered sales strategies, and provided exceptional care to 15 toddlers',
-          ]}]
+            {
+              jobTitle: 'Data Analyst',
+              startDate: 'Oct 2024',
+              endDate: 'Nov 2024',
+              responsibilities: [
+                'Completed the "From Data to Insights with Google Cloud Specialization" on Coursera, gaining expertise in data analysis with Google Cloud BigQuery using SQL, leveraging BigQuery ML for machine learning, and creating impactful visualizations with Looker Studio',
+                'Analyzed the NYC Citi Bike Trips dataset using BigQuery, SQL, and Looker Studio, generating visualizations that highlight transportation trends and demonstrate the significant influence of weather on Citi Bike usage, supported by quantitative correlation analysis'
+              ]
+            },
+          ]
         },
         {
           company: 'Snap Inc.',

@@ -4,6 +4,13 @@ import { StyledProjects } from './Projects.styled';
 const Work = ({ open, width}) => {
   const projects = [
     {
+      id: 0,
+      title: 'Mitigating Positional Biases with Adversarial SQuAD',
+      description: 'Trained and evaluated a HuggingFace ELECTRA transformer model using Python, PyTorch, NLTK, and spaCy, implementing novel adversarial data augmentation techniques on SQuAD and Adversarial SQuAD datasets. Applied inoculation by fine-tuning to enhance model robustness against adversarial text in question-answering task. Documented methodology and results in a research paper formatted to ACL standards.',
+      image: 'project1.jpg',
+      link: 'https://github.com/efortanely/mitigating-positional-biases-with-adversarial-squad'
+    },
+    {
       id: 1,
       title: 'Variational Autoencoder for Text Generation',
       description: 'Designed and trained a model for text generation with the ability to vary the sentiment. Utilized NLTK and GloVe for data preparation, PyTorch for model design and training, with an LSTM encoder and CNN decoder. Wrote a technical report in the format of a NeurIPS submission.',
